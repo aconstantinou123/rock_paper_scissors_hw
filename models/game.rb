@@ -8,16 +8,18 @@ class Game
   end
 
   def find_winner()
-    if (@player1 == 'rock' && @player2 == 'scissors') ||
-       (@player1 == 'scissors' && @player2 == 'rock')
-      return 'rock wins'
-    elsif (@player1 == 'rock' && @player2 == 'paper') ||
-      (@player1 == 'paper' && @player2 == 'rock')
-      return 'paper wins'
-    elsif
-      (@player1 == 'paper' && @player2 == 'scissors') ||
-      (@player1 == 'scissors' && @player2 == 'paper')
-      return 'scissors win'
+    if (@player1 == 'rock' && @player2 == 'scissors')
+      return "Rock crushes scissors. Player 1 wins"
+    elsif (@player1 == 'scissors' && @player2 == 'rock')
+      return "Rock crushes scissors. Player 2 wins"
+    elsif (@player1 == 'rock' && @player2 == 'paper')
+      return "Paper obliterates rock. Player 1 wins"
+    elsif (@player1 == 'paper' && @player2 == 'rock')
+      return "Paper obliterates rock. Player 2 wins"
+    elsif (@player1 == 'paper' && @player2 == 'scissors')
+      return 'Scissors eviscerate paper. Player 1 wins'
+    elsif (@player1 == 'scissors' && @player2 == 'paper')
+      return 'Scissors eviscerate paper. Player 2 wins'
     else
       return 'Its a draw!'
     end
