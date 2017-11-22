@@ -1,1 +1,17 @@
 <h1>The result is.... <%= @result %></h1>
+<%if @result == "Rock crushes scissors. Player 1 wins"%>
+<!-- <img src = "./rock.jpg"> -->
+<img src = "https://beardeertshirt.files.wordpress.com/2011/09/rock-paper-scissors-shirt.jpg">
+<%elsif @result == "Rock crushes scissors. Player 2 wins"%>
+<img src = "https://beardeertshirt.files.wordpress.com/2011/09/rock-paper-scissors-shirt.jpg">
+<%elsif @result == "Paper obliterates rock. Player 1 wins"%>
+<img src = "https://img00.deviantart.net/dec2/i/2008/287/9/2/happy_paper_by_jinxbunny.jpg">
+<%elsif @result == "Paper obliterates rock. Player 2 wins"%>
+<img src = "https://img00.deviantart.net/dec2/i/2008/287/9/2/happy_paper_by_jinxbunny.jpg">
+<%elsif @result == 'Scissors eviscerate paper. Player 1 wins'%>
+<img src ="http://public.media.smithsonianmag.com/legacy_blog/vector-scissors1.jpg">
+<%elsif @result == 'Scissors eviscerate paper. Player 2 wins'%>
+<img src ="http://public.media.smithsonianmag.com/legacy_blog/vector-scissors1.jpg">
+<%else%>
+<img src ="https://n6-img-fp.akamaized.net/free-photo/confused-boy_1149-1038.jpg?size=338&ext=jpg">
+<%end%>
